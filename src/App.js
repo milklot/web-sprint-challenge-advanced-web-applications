@@ -5,7 +5,7 @@ import Login from "./components/Login";
 import "./styles.scss";
 
 function App() {
-  console.log("codegrade setup");
+  //console.log("codegrade setup");
   return (
     <Router>
       <div className="App">
