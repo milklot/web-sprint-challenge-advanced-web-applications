@@ -7,7 +7,6 @@ import PrivateRoute from "./components/PrivateRoute";
 import "./styles.scss";
 
 function App() {
-  //console.log("codegrade setup");
   return (
     <Router>
       <div className="App">

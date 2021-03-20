@@ -5,7 +5,7 @@ const Login = (props) => {
 
   const [form, setForm] = useState({
     username: '',
-    password: ''
+    password: '',
   });
 
   const handleChange = (event) => {
@@ -37,7 +37,7 @@ const Login = (props) => {
     // make a post request to retrieve a token from the api
     // when you have handled the token, navigate to the BubblePage route
   },[]);
-  
+
   return (
     <>
       <h1>
@@ -45,9 +45,9 @@ const Login = (props) => {
       </h1>
       <div>
         <form onSubmit={submitForm}>
-          <label for="username">Username</label>
+          <label htmlFor="username">Username</label>
           <input type='text' id="username" name="username" value={form.username} onChange={handleChange}/>
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input type="password" id="password" name="password" value={form.password} onChange={handleChange}/>
           <button type="submit">Submit</button>
         </form>
